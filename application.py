@@ -6,7 +6,7 @@ todos = []
 
 @app.route("/")
 def tasks():
-    return render_template("tasks.html", todos=todos)
+    return render_template("index.html", todos=todos)
 
 @app.route("/add", methods=["GET", "POST"])
 def add():
